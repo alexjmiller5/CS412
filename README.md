@@ -1,2 +1,2 @@
 # CS412
-Homeworks &amp; Projects for CS112 at Boston University
+Homeworks &amp; Projects for CS412 at Boston University
