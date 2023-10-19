@@ -1,0 +1,15 @@
+doctype html
+html
+  head
+    title Brawl Stars Info
+  body
+    h1 Find Brawler Information By Name
+    form(action="/ps4/promise" method="post")
+      input(type="text" name="brawlerName" placeholder="Enter brawler name")
+      button(type="submit") Search with promise
+    form(action="/ps4/async" method="post")
+      input(type="text" name="brawlerName" placeholder="Enter brawler name")
+      button(type="submit") Search with async
+    form(action="/ps4/callback" method="post")
+      input(type="text" name="brawlerName" placeholder="Enter brawler name")
+      button(type="submit") Search with callback

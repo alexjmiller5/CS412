@@ -1,0 +1,26 @@
+doctype html
+html(lang="en")
+  head
+    title Brawler Information
+  body
+    if brawlerInfo
+      h1 Brawler Information
+      h2 Name: #{brawlerInfo.name}
+      h3 ID: #{brawlerInfo.id}
+      h3 Star Powers
+      if brawlerInfo.starPowers && brawlerInfo.starPowers.length
+        h4 Star Powers
+        ul
+          each sp in brawlerInfo.starPowers
+            li= sp.name
+      else
+        h4 No Star Powers available
+      if brawlerInfo.gadgets && brawlerInfo.gadgets.length
+        h4 Gadgets
+        ul
+          each gadget in brawlerInfo.gadgets
+            li= gadget.name
+      else
+        h4 No Gadgets available
+    else
+      h1 No Brawler Information Found
