@@ -1,0 +1,11 @@
+<div *ngIf="data">
+    <h3>{{ data.name }}</h3>
+    <p>Star Powers:</p>
+    <ul>
+      <li *ngFor="let starPower of data.starPowers">{{ starPower.name }}</li>
+    </ul>
+    <p>Gadgets:</p>
+    <ul>
+      <li *ngFor="let gadget of data.gadgets">{{ gadget.name }}</li>
+    </ul>
+  </div>  
